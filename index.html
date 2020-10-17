@@ -1,0 +1,189 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DX-MATHS</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" /> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="showGame();">Game</button></li>
+                <li><button onclick="showLegal();">Legal</button></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>
+        DX Maths
+    </h1>
+    <div id="legal">
+        <table>
+            <tr>
+                <th colspan="3" class="h2">SOUNDS</th>
+            </tr>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>License</th>
+            </tr>
+            <tr>
+                <td>waveplay_old</td>
+                <td><a href="https://freesound.org/people/waveplay_old/sounds/246420/">navigate.wav</a></td>
+                <td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</a></td>
+            </tr>
+            <tr>
+                <td>Breviceps</td>
+                <td><a href="https://freesound.org/people/Breviceps/sounds/452998/">navigateInto.wav</a></td>
+                <td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</a></td>
+            </tr>
+            <tr>
+                <td>LittleRobotSoundFactory</td>
+                <td><a href="https://freesound.org/people/LittleRobotSoundFactory/sounds/274178/">score.wav</a></td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>Setuniman</td>
+                <td><a href="https://freesound.org/people/Setuniman/sounds/142297/">gameClear.wav</a></td>
+                <td><a href="https://creativecommons.org/licenses/by-nc/3.0/">Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>simon.rue</td>
+                <td><a href="https://freesound.org/people/simon.rue/sounds/49963/">bounce-wall.wav</a></td>
+                <td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</a></td>
+            </tr>
+            <tr>
+                <td>InspectorJ</td>
+                <td><a href="https://freesound.org/people/InspectorJ/">ui-alert.wav</a></td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>HenryRichard</td>
+                <td><a href="https://freesound.org/people/HenryRichard/sounds/448266/">level-clear.wav</a></td>
+                <td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</a></td>
+            </tr>
+            <tr>
+                <td>jens.enk</td>
+                <td><a href="https://freesound.org/people/jens.enk/sounds/434610/">pauseon.wav</a></td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>jens.enk</td>
+                <td><a href="https://freesound.org/people/jens.enk/sounds/434611/">pauseoff.wav</a></td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>Isaac200000</td>
+                <td><a href="https://freesound.org/people/Isaac200000/sounds/188013/">error.wav</a></td>
+                <td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</a></td>
+            </tr>
+            <tr>
+                <td>dersuperanton</td>
+                <td><a href="https://freesound.org/people/dersuperanton/sounds/433649/">bounce-bar.wav</a></td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>elmasmalo1</td>
+                <td><a href="https://freesound.org/people/elmasmalo1/sounds/376968/"></a>brick-pop.wav</td>
+                <td><a href="https://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported (CC BY 3.0)</a></td>
+            </tr>
+            <tr>
+                <td>Breviceps</td>
+                <td><a href="https://freesound.org/people/Breviceps/sounds/445978/">error2.wav</a></td>
+                <td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</a></td>
+            </tr>
+            <tr>
+                <th colspan="3" class="h2">IMAGES</th>
+            </tr>
+            <tr>
+                <td>pixabay</td>
+                <td><a href="https://pixabay.com/illustrations/fractal-matrix-tunnel-warp-1812490/">background.jpg</a></td>
+                <td><a href="https://pixabay.com/service/license/">Pixabay License</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="game1">
+        <canvas id="theCanvas"></canvas>
+        <div id="controlHolder">
+            <button class="controls enter" onmousedown="keyboardEnter();" onmouseup="keyUpHandler();">Ent</button>
+            <button class="controls up" onmousedown="keyboardUp();" onmouseup="keyUpHandler();">&#708;</button>
+            <button class="controls escape" onmousedown="keyboardEscape();" onmouseup="keyUpHandler();">Esc</button><br>
+            <button class="controls left" id="left" onmousedown="keyboardLeft();" onmouseup="keyUpHandler();">&#60;</button>
+            <button class="controls down" onmousedown="keyboardDown();" onmouseup="keyUpHandler();">v</button>
+            <button class="controls right" id="right" onmousedown="keyboardRight();" onmouseup="keyUpHandler();">&#707;</button>
+            <br>
+        </div>
+    </div>
+    <script src="data/config.js"></script>
+    <script src="data/levels.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        //control handling starts
+        document.addEventListener("keydown", keyDownHandler, false);
+        document.addEventListener("keyup", keyUpHandler, false);
+        function keyDownHandler(e) {
+            keydown = true;
+            if(e.key=="Right"||e.key=="ArrowRight") {
+                currentKey = "R";
+            }
+            else if(e.key=="Left"||e.key=="ArrowLeft") {
+                currentKey = "L";
+            }
+            else if(e.key=="Up"||e.key=="ArrowUp") {
+                console.log("Up");
+                if(menu.enabled)
+                    menu.moveUp();
+                else if(options.enabled)
+                    options.moveUp();
+            }
+            else if(e.key=="Down"||e.key=="ArrowDown") {
+                console.log("Down");
+                if(menu.enabled)
+                    menu.moveDown();
+                else if(options.enabled)
+                    options.moveDown();
+            }
+            else if(e.key=="Enter"){
+                console.log("Enter");
+                if(menu.enabled)
+                    menu.enter();
+                else if(options.enabled)
+                    options.enter();
+            }
+            else if(e.key=="Escape"){
+                console.log("Escape");
+                if(!inGame&&inRules){
+                    rules.escape();
+                }
+                if(inGame){
+                    console.log("Paused!");
+                    paused=true;
+                    inGame=false;
+                    clearInterval(gameStart);
+                    if(!mute){
+                        pauseSound = new sound("sounds/pauseoff.ogg");
+                        pauseSound.play();
+                    }
+                    pauseGame = setInterval(pause.draw(),10);
+                }
+                else if(!inGame&&paused){
+                    console.log("Resumed!");
+                    pause.escape();
+                }
+                if(inOptions){
+                    console.log("back from options")
+                    options.escape();
+                }
+            }
+        }
+        function keyUpHandler(e) {
+            keydown = false;
+            currentKey = null;
+        }
+        //control handling ends
+        var menuStart = setInterval(menu.draw, 10);
+    </script>
+</body>
+</html>

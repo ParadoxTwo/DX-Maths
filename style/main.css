@@ -1,0 +1,80 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+}
+canvas { 
+    display: block; 
+    margin: 0 auto; 
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(8, 8, 8, 0.781);
+}
+#controlHolder{
+    background-color: rgba(8, 8, 8, 0.781);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+  
+li {
+    float: left;
+}
+  
+li button {
+    display: block;
+    border: none;
+    color: white;
+    background-color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li button:hover {
+    background-color: #555;
+}
+
+
+#controlHolder{
+    text-align: center;
+}
+.controls {
+    display: inline;
+    border: none;
+    color: white;
+    background-color: #111;
+    text-align: center;
+    margin-left: -2px;
+    margin-right: -2px;
+    padding: 10px 16px;
+}
+
+#legal{
+    display: none;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 50px 50px;
+    background-color: rgba(8, 8, 8, 0.781);
+    color: aliceblue;
+    text-align: center;
+}
+table{
+    margin-bottom: 10vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: aliceblue
+}
+td{
+    padding: 10px 10px;
+}
+a:link, a:visited{
+    color: aliceblue;
+}

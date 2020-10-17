@@ -1,0 +1,128 @@
+﻿
+
+Here it is:
+
+Week 5:
+3/4/19:
+minor updates:
+    started creation of the core of game.
+    established the structure of the game files.
+    created the canvas.
+working on:
+    game objects
+
+According to my milestones, the core of the game should be created in the first release. I've started the work
+
+Week 6:
+8/4/19:
+major updates:
+    created game object: bar
+working on:
+    rest of the game core
+
+14/4/19:
+major updates:
+    created game object: ball
+working on:
+    rest of the game core
+
+Well, according to my milestones, the core of the game should be created in the first release.
+I made 2 game objects which is a part of the core of the game. These objects are reusable.
+
+Week 7:
+20/4/19:
+major updates:
+    optimized the controls
+    created game object: bricks
+    set "game over" conditions in the core
+working on:
+    collision system (bricks particularly)
+
+27/4/19:
+minor updates:
+    finished the collision system.
+working on:
+    scoring
+    maths questions
+
+According to my milestones, the core of the game should be created in the first release.
+I made game object: bricks and arranged them into a grid design.
+
+Week 8:
+3/5/19:
+major updates:
+    set up maths questions
+    implemented dropping of answers
+    implemented the scoring method
+working on:
+    menu
+
+The 1st release of the game is finished and now I'm working on the 2nd release. The first one is just a basic game.
+In the 2nd release I'll be adding to and modifying the code to create menu, levels and also add sounds. 
+Then I'll improve the UI/UX and submit the game. Gonna rev up for these things!
+
+Week 9:
+8/5/19:
+major updates:
+    created menu of the game with a pointer.
+    integrated menu with the core of game.
+working on:
+    rules in menu
+    planning addition of levels.
+
+9/5/19:
+major updates:
+    made the game scaleable as per screen resolution.
+    added rules in menu
+    enabled pausing in the game.
+    added levels to game.
+minor updates:
+    the ball's direction changes depending its landing position on bar
+
+working on:
+    questions of new levels.
+    changing brick design in new levels.
+
+11/5/19:
+major updates:
+    customized 9 different levels
+minor updates:
+    some minor fixes
+working on:
+    3 remaining levels
+    options
+
+12/5/19:
+major updates:
+    added options in menu
+    enabled auto-adjustment of resolution
+minor updates:
+    added "set start level" in options
+working on:
+    sounds
+
+I've successfully integrated menu into the game and also added 12 different levels. I've also made minor improvements in the UX.
+This means a great deal of progress towards the 2nd release of the game. Sounds and UI improvement are still pending though.
+
+Week10
+
+14/05/19:
+major updates:
+    enabled sounds
+    fixed bugs during level ups.
+    fixed bugs during window resize.
+minor updates:
+    added mute/unmute option
+    minor UI improvements
+working on:
+    documentation
+
+16/05/19:
+major updates:
+    finished documentation
+    optimized UI
+working on:
+    recording video
+
+Sounds have been added, UI & UX have also been improved significantly. The milestones have been accomplished. 
+The 2nd release of DX-Maths is ready!
